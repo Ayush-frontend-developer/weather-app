@@ -41,7 +41,7 @@ function search ({hello}){
       
     return(<div>
         <form onSubmit={abnormal} id='form'>
-         <TextField value={country} onChange={value} size="small" id="outlined-basic" label="Outlined" variant="filled" required />
+         <TextField value={country} onChange={value} size="small" id="outlined-basic" label="Location" variant="filled" required />
          <Button type='submit' color='secondary'variant='outlined' >search</Button>
      </form>
      <h4 style={{color:"red", letterSpacing:"5px"}}>{err==true? 'incorrect name':""}</h4>

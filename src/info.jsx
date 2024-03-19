@@ -29,7 +29,7 @@ function box ({info}){
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           <h4>weather</h4>
-          <p>{value.humidity>80 ? <ThunderstormIcon/>:(value.temp>15 ?<WbSunnyIcon/>:<AcUnitIcon/>)}</p>
+          <p style={value.name?{display:'block'}:{display:'none'}}>{value.humidity>80 ? <ThunderstormIcon/>:(value.temp>15 ?<WbSunnyIcon/>:<AcUnitIcon/>)}</p>
         </Typography >
         <Typography style={value.name?{display:"block"}:{display:"none"}} component={"div"}>
         <h5>city {value.name}</h5>
